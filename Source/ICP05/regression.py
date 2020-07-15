@@ -7,7 +7,7 @@ from sklearn.metrics import mean_squared_error
 
 train = pd.read_csv('winequality-red.csv')
 
-# Handling missing value
+# Handling missing and null values
 data = train.select_dtypes(include=[np.number]).interpolate().dropna()
 
 # Working with Numeric Features
